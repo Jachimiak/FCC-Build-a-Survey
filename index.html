@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC - Build a Survey</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <div id="survey-box">
+    <div class="flex-center">
+      <h1 id="title">World of Warcraft Survey</h1>
+    </div>
+    <div class="flex-center">
+      <p id="description">Share your thoughts on the World of Warcraft story</p>
+    </div>
+    <div>
+      <form id="survey-form" action="mailto:terry.jachimiak@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="form-boxes" placeholder="Full Name">
+        </div>
+        <div>
+          <label for="name" id="email-label">Email</label>
+          <input type="email" name="email" id="email" class="form-boxes" placeholder="Email Address">
+        </div>
+        <div>
+          <label for="name" id="number-label">Years Playin WoW</label>
+          <input type="number" name="number" id="number" class="form-boxes" min="1" max="14" placeholder="1">
+        </div>
+        <div>
+           <h3 id="favorite-race">Favorite Race</h3>
+          <select id="dropdown" name="cars">
+              <option value="human">Human</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="night_elf">Night Elf</option>
+              <option value="gnome">Gnome</option>
+              <option value="draenei">Draenei</option>
+              <option value="worgen">Worgen</option>
+              <option value="orc">Orc</option>
+              <option value="undead">Undead</option>
+              <option value="tauren">Tauren</option>
+              <option value="troll">Troll</option>
+              <option value="blood_elf">Blood Elf</option>
+              <option value="goblin">Goblin</option>
+              <option value="pandaren">Pandaren</option>
+          </select>
+        </div>
+        <div>
+            <h3 id="Favorite-land">Favorite Land</h3>
+            <input type="radio" name="kingdom" value="Kalimdor" checked> Kalimdor<br>
+  <input type="radio" name="kingdom" value="eastern_kingdom"> Eastern Kingdom<br>
+  <input type="radio" name="kingdom" value="other"> Other
+        </div>
+        <div>
+           <h3 id="favorite-faction">Favorite Faction</h3>
+            <input type="checkbox" name="horde" value="Horde"> Horde<br>
+            <input type="checkbox" name="alliance" value="Alliance"> Alliance 
+        </div>
+        <div>
+          <h3 id="text-area">Describe Your Playstyle</h3>
+          <textarea name="message" rows="10" cols="30">
+            </textarea>
+        </div>
+        <div>
+          <input id="submit" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+  
+  
+
+</body>
+
+</html>

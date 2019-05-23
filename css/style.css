@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Kodchasan|Muli&display=swap");
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(64, 10, 10, 1) 35%,
+    rgba(140, 22, 22, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 300px;
+  padding: 100px 0;
+}
+
+#survey-box {
+  background: #eeeeee;
+  max-width: 60%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 3%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600;
+  font-size: 36pt;
+}
+
+#description {
+  font-size: 14pt;
+  font-family: "Muli", sans-serif;
+}
+
+.form-boxes {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#survey-form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#name-label {
+    margin: 5px 10px 5px 0;
+}
+
+@media (max-width: 800px) {
+  #survey-form {
+    margin: 10px 0;
+  }
+
+  #survey-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
