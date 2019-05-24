@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FCC - Build a Survey</title>
-  
+  <title>FCC - Build a Survey Fork 1</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
   
   
       <link rel="stylesheet" href="css/style.css">
@@ -14,68 +14,71 @@
 
 <body>
 
-  <body>
-  <div id="survey-box">
-    <div class="flex-center">
-      <h1 id="title">World of Warcraft Survey</h1>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+
+  <header>
+    <div id="header">
+      <h1 id="title">WoW Classic Survey</h1>
     </div>
-    <div class="flex-center">
-      <p id="description">Share your thoughts on the World of Warcraft story</p>
-    </div>
-    <div>
+  </header>
+  <main>
+    <div class="form-style-10">
+      <div id="style-box">
+        Share Your Thoughts!
+        <p id="description"><span>We want to know what your plans are when it comes to World of Warcraft Classic!</span></p>
+
+      </div>
       <form id="survey-form" action="mailto:terry.jachimiak@gmail.com" method="post" enctype="text/plain">
-        <div>
-          <label for="name" id="name-label">Name</label>
-          <input type="text" name="name" id="name" class="form-boxes" placeholder="Full Name">
+        <div class="section"><span>1</span>Name and Email Address</div>
+        <div class="inner-wrap">
+          <label for="name" id="name-label">Name* 
+          <input type="text" name="name" id="name" class="form-boxes" placeholder="Full Name" required></label>
+          <label for="name" id="email-label">Email*  
+          <input type="email" name="email" id="email" class="form-boxes" placeholder="Email Address" required></label>
+          <label for="name" id="number-label">Years Playing WoW
+          <input type="number" name="number" id="number" class="form-boxes" min="1" max="14" placeholder="1"></label>
         </div>
-        <div>
-          <label for="name" id="email-label">Email</label>
-          <input type="email" name="email" id="email" class="form-boxes" placeholder="Email Address">
-        </div>
-        <div>
-          <label for="name" id="number-label">Years Playin WoW</label>
-          <input type="number" name="number" id="number" class="form-boxes" min="1" max="14" placeholder="1">
-        </div>
-        <div>
-           <h3 id="favorite-race">Favorite Race</h3>
-          <select id="dropdown" name="cars">
+
+        <div class="section"><span>2</span>Race and Faction Preferences</div>
+        <div class="inner-wrap">
+          <label for="name">Race Preference
+          <select id="dropdown" name="races">
               <option value="human">Human</option>
               <option value="dwarf">Dwarf</option>
               <option value="night_elf">Night Elf</option>
               <option value="gnome">Gnome</option>
-              <option value="draenei">Draenei</option>
-              <option value="worgen">Worgen</option>
               <option value="orc">Orc</option>
               <option value="undead">Undead</option>
               <option value="tauren">Tauren</option>
               <option value="troll">Troll</option>
-              <option value="blood_elf">Blood Elf</option>
-              <option value="goblin">Goblin</option>
-              <option value="pandaren">Pandaren</option>
-          </select>
+             </select>
+             </label>
+          <label for="name" id="buttons">Which Faction will you be joining? <br ><br >
+      <input type="radio" name="kingdom" value="yes" checked> Yes<br>
+  <input type="radio" name="kingdom" value="no"> No<br>
+  <input type="radio" name="kingdom" value="other"> Maybe some day, but not now.</label>
+
+          <label for="name" id="checkboxes">Will You Be Playing Classic? <br ><br >
+                <input type="checkbox" name="horde" value="Horde"> Horde<br>
+            <input type="checkbox" name="alliance" value="Alliance"> Alliance </label>
         </div>
-        <div>
-            <h3 id="Favorite-land">Favorite Land</h3>
-            <input type="radio" name="kingdom" value="Kalimdor" checked> Kalimdor<br>
-  <input type="radio" name="kingdom" value="eastern_kingdom"> Eastern Kingdom<br>
-  <input type="radio" name="kingdom" value="other"> Other
+
+        <div class="section"><span>3</span>Additional Info</div>
+        <div class="inner-wrap">
+
+          <label>Tell Us About Your First Time in WoW  <textarea name="message" rows="10" cols="30">
+            </textarea></label>
         </div>
-        <div>
-           <h3 id="favorite-faction">Favorite Faction</h3>
-            <input type="checkbox" name="horde" value="Horde"> Horde<br>
-            <input type="checkbox" name="alliance" value="Alliance"> Alliance 
-        </div>
-        <div>
-          <h3 id="text-area">Describe Your Playstyle</h3>
-          <textarea name="message" rows="10" cols="30">
-            </textarea>
-        </div>
-        <div>
-          <input id="submit" type="submit" value="Submit">
+        <div class="button-section">
+          <input id="submit" type="submit" name="Sign Up" />
+
         </div>
       </form>
     </div>
-  </div>
+  </main>
+
 </body>
   
   
